@@ -1,6 +1,7 @@
-import React from 'react';
-import { useAuth0 } from '@auth0/auth0-react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth0 } from '@auth0/auth0-react';
+
 const Tooltip = ({ text }) => {
   return (
     <div className="relative group inline-block">
@@ -15,6 +16,11 @@ const Tooltip = ({ text }) => {
 };
 const Navbar = () => {
   const { loginWithRedirect, user, isLoading } = useAuth0();
+  const [setModalOpen] = useState(false);
+
+  const handlePreRegister = () => {
+    setModalOpen(true);
+  };
   const linkClassNames =
     '[text-decoration:none] flex flex-col p-2.5 items-start justify-start text-[inherit] hover:bg-gray-50 hover:text-primaryblue-500';
   return (
@@ -23,14 +29,11 @@ const Navbar = () => {
         {/* LOGO - start */}
         {/* Make sure that the above padding is set to the all the other components on this page. */}
         <Link to="/">
-          <img src="/SophteraLogo.svg" alt="Logo" />
+         <img src="/RealEstateLogo.png" alt="Logo" style={{ width: '150px', height: 'auto' }} />
         </Link>
-        {/* LOGO - end */}
         <div className="flex flex-row items-start justify-between gap-[24px] text-sm">
-          {/* Conditional rendering based on user */}
           {user ? (
             <>
-              {/* Links for logged-in user */}
               <Link to="/portfolio" className={linkClassNames}>
                 <div className="relative font-medium">Portfolio</div>
               </Link>
@@ -43,17 +46,12 @@ const Navbar = () => {
               <Link to="/community" className={linkClassNames}>
                 <div className="relative font-medium">Community</div>
               </Link>
-              {/* OurStoryDropdown component */}
-              {/* Search button */}
               <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-[22px] h-[22px] items-center shrink-0">
               </button>
             </>
           ) : (
-            // PRIMARY NAVBAR - START
             <>
-              {/* Links for non-logged-in user */}
               <div className="flex flex-row items-start justify-start gap-[50px]">
-                {/* Tooltips */}
                 <div className="relative font-medium items-center">
                   <Tooltip text="Marketplace"></Tooltip>
                 </div>
@@ -66,7 +64,6 @@ const Navbar = () => {
                 <div className="relative font-medium items-center">
                   <Tooltip text="Support"></Tooltip>
                 </div>
-                {/* Login button */}
                 <button
                   className="cursor-pointer ml-auto [border:none] py-2 px-2.5 bg-primaryblue-500 rounded-lg"
                   style={{ marginLeft: 'auto' }}
@@ -81,23 +78,22 @@ const Navbar = () => {
                   </div>
                 </button>
                 <div className="flex-grow" />
-                {/* Pre-Register button */}
                 <button
                   className="lg:hidden cursor-pointer [border:none] py-2 px-2.5 bg-primaryblue-500 rounded-lg flex flex-row items-center justify-right hover:shadow-[0px_1px_4px_rgba(0,_0,_0,_0.25)]"
+                  onClick={handlePreRegister}
                 >
                   <div className="relative text-sm font-semibold font-poppins text-white text-left">
                     Pre-Register
                   </div>
                 </button>
               </div>
+              <div className="lg:visible invisible stroke-primaryblue-500 fixed top-0 right-0 p-4">
+              </div>
             </>
-            // PRIMARY NAVBAR - END
-            // MOBILE NAVBAR MENU COMES HERE
           )}
         </div>
         <div className="flex flex-row items-start justify-start">
           <div className="flex flex-row items-center justify-end gap-[24px]">
-            {/* Conditional rendering of ProfileDropdown */}
             {!isLoading && user}
           </div>
         </div>
@@ -105,5 +101,4 @@ const Navbar = () => {
     </div>
   );
 };
-
 export default Navbar;

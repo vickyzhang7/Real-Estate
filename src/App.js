@@ -18,11 +18,9 @@ const App = () => {
 
   return (
     <Router>
-      <div className="App">
-        <header className="App-header">
+      <div className="h-screen flex flex-col">
           <Navbar />
           {element}
-        </header>
       </div>
     </Router>
   );
