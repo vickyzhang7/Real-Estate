@@ -1,15 +1,14 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import HomePage from './pages/HomePage';
+import Landing from './pages/Landing';
 import AboutPage from './pages/AboutPage';
 import MarketplacePage from './pages/MarketplacePage';
 import './App.css';
-
 const App = () => {
   const element = (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<Landing />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/marketplace" element={<MarketplacePage />} />
       {/* Add other route configurations */}

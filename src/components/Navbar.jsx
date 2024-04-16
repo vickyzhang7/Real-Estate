@@ -15,7 +15,7 @@ const Tooltip = ({ text }) => {
   );
 };
 const Navbar = () => {
-  const { loginWithRedirect, user, isLoading } = useAuth0();
+  const { loginWithRedirect, user} = useAuth0();
   const [setModalOpen] = useState(false);
 
   const handlePreRegister = () => {
