@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
+import LoginButton from "./LoginButton";
+import LogoutButton from "./LogoutButton";
 
 const Tooltip = ({ text }) => {
   return (
@@ -15,12 +17,8 @@ const Tooltip = ({ text }) => {
   );
 };
 const Navbar = () => {
-  const { loginWithRedirect, user} = useAuth0();
-  const [setModalOpen] = useState(false);
+  const { user, isLoading } = useAuth0();
 
-  const handlePreRegister = () => {
-    setModalOpen(true);
-  };
   const linkClassNames =
     '[text-decoration:none] flex flex-col p-8 items-start justify-start text-[inherit] hover:bg-gray-50 hover:text-primaryblue-500';
   return (
@@ -48,6 +46,7 @@ const Navbar = () => {
               </Link>
               <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-[22px] h-[22px] items-center shrink-0">
               </button>
+              <LogoutButton />
             </>
           ) : (
             <>
@@ -64,28 +63,7 @@ const Navbar = () => {
                 <div className="relative font-medium items-center">
                   <Tooltip text="Support"></Tooltip>
                 </div>
-                <button
-                  className="cursor-pointer ml-auto [border:none] py-2 px-2.5 bg-primaryblue-500 rounded-lg"
-                  style={{ marginLeft: 'auto' }}
-                  onClick={() =>
-                    loginWithRedirect({
-                      redirectUri: `${window.location.origin}/callback`,
-                    })
-                  }
-                >
-                  <div className="relative font-medium font-poppins text-white">
-                    Login
-                  </div>
-                </button>
-                <div className="flex-grow" />
-                <button
-                  className="lg:hidden cursor-pointer [border:none] py-2 px-2.5 bg-primaryblue-500 rounded-lg flex flex-row items-center justify-right hover:shadow-[0px_1px_4px_rgba(0,_0,_0,_0.25)]"
-                  onClick={handlePreRegister}
-                >
-                  <div className="relative text-sm font-semibold font-poppins text-white text-left">
-                    Pre-Register
-                  </div>
-                </button>
+                <LoginButton />
               </div>
               <div className="lg:visible invisible stroke-primaryblue-500 fixed top-0 right-0 p-4">
               </div>
@@ -93,6 +71,9 @@ const Navbar = () => {
           )}
         </div>
         <div className="flex flex-row items-start justify-start">
+          <div className="flex flex-row items-center justify-end gap-[24px]">
+            {!isLoading && user}
+          </div>
         </div>
       </div>
     </div>
