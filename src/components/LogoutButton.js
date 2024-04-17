@@ -5,8 +5,12 @@ const LogoutButton = () => {
 
     return (
         isAuthenticated && (
-            <button onClick={() => logout()}>
-                Sign Out
+            <button 
+            className="cursor-pointer ml-auto [border:none] py-2 px-2.5 bg-primaryblue-500 rounded-lg"
+            onClick={() => logout()}>
+                <div className="relative font-medium font-poppins text-white">
+                    logout
+                </div>
             </button>
         )
     )

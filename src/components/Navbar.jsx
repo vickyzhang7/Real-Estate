@@ -32,6 +32,7 @@ const Navbar = () => {
         <div className="flex flex-row items-start justify-between gap-[24px] text-sm">
           {user ? (
             <>
+            <div className="flex flex-row items-center justify-between gap-[50px]">
               <Link to="/portfolio" className={linkClassNames}>
                 <div className="relative font-medium">Portfolio</div>
               </Link>
@@ -44,9 +45,8 @@ const Navbar = () => {
               <Link to="/community" className={linkClassNames}>
                 <div className="relative font-medium">Community</div>
               </Link>
-              <button className="cursor-pointer [border:none] p-0 bg-[transparent] relative w-[22px] h-[22px] items-center shrink-0">
-              </button>
-              <LogoutButton />
+              <div className="relative font-medium"><LogoutButton /></div>
+            </div>
             </>
           ) : (
             <>
@@ -63,9 +63,9 @@ const Navbar = () => {
                 <div className="relative font-medium items-center">
                   <Tooltip text="Support"></Tooltip>
                 </div>
-                <LoginButton />
-              </div>
-              <div className="lg:visible invisible stroke-primaryblue-500 fixed top-0 right-0 p-4">
+                <div className="relative font-medium items-center">
+                  <LoginButton />
+                </div>
               </div>
             </>
           )}
