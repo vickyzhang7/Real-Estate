@@ -2,8 +2,24 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Investcard from '../components/listingproperty/investcard';
 import AnnouncementCard from '../components/listingproperty/announcementCard';
+import { Carousel } from 'react-responsive-carousel';
 
 const MarketplacePage = () => {
+  const imageCount = 4;
+  const images = []; 
+
+
+  for (let i = 1; i <= imageCount; i++) {
+    images.push(
+      <img
+        key={`image${i}`} 
+        className="relative w-full"
+        alt=""
+        src={`/listing/image${i}.jpg`}
+      />
+    );
+  }
+
 
   const propertyDetails = {
     id: 1,
@@ -36,6 +52,9 @@ const MarketplacePage = () => {
       </div>
         <div className="flex flex-row items-start mt-14 gap-20" >
             <div className="text-zinc-700 text-small font-normal font-['Poppins'] text-left mt-10" >
+              <Carousel showArrows={true} emulateTouch={true} showThumbs={false}>
+                {images}
+              </Carousel>
               <p>{propertyDetails.description}</p>
               {/* Render property details data */}
               {detailsData.map((item, index) => (
