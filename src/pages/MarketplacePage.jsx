@@ -35,7 +35,6 @@ const MarketplacePage = () => {
         </div>
       </div>
         <div className="flex flex-row items-start mt-14 gap-20" >
-          <div className="flex-grow">
             <div className="text-zinc-700 text-small font-normal font-['Poppins'] text-left mt-10" >
               <p>{propertyDetails.description}</p>
               {/* Render property details data */}
@@ -45,7 +44,6 @@ const MarketplacePage = () => {
                 </p>
               ))}
             </div>
-          </div>
           <div className="flex flex-col items-start gap-10" style={{ flexBasis: '80%' }}>
             <div className="flex flex-col items-end mt-14 ">
               {/* Render Investcard component */}
