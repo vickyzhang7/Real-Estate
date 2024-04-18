@@ -939,7 +939,7 @@ const Landing = () => {
       <div className="self-stretch font-poppins">
         <footer className="self-stretch bg-gray-800 h-[80px] shrink-0 flex md:flex-row sm:flex-col items-center justify-between py-[16px] px-8 box-border text-left text-sm text-primarywhite gap-[8px]">
           <div className="relative inline-block shrink-0">
-            Copyright 2023 - Sophtera
+            Copyright 2024 - 601 Spring 2024
           </div>
           <div className="relative text-right">Investment Made Easy!</div>
         </footer>
