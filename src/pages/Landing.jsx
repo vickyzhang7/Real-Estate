@@ -1,52 +1,16 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 import Slider from 'react-slick';
 
 const Landing = () => {
-  const [setModalOpen] = useState(false);
   const ImageComponent = () => {
-    const [style, setStyle] = useState({});
-
-    useEffect(() => {
-      const handleResize = () => {
-        if (window.innerWidth < 421) {
-          setStyle({ filter: 'brightness(40%)' });
-        } else {
-          setStyle({});
-        }
-      };
-      // Set initial style
-      handleResize();
-      window.addEventListener('resize', handleResize);
-
-      // Remove event listener on cleanup
-      return () => window.removeEventListener('resize', handleResize);
-    }, []);
-
     return (
       <img
         className="max-w-full h-auto object-cover ml-auto"
         alt="landing page photo"
         src="/landing/launchPhoto.png"
-        style={style}
       />
     );
-  };
-  const [showBackground, setShowBackground] = useState(true);
-
-  useEffect(() => {
-    const checkSize = () => {
-      setShowBackground(window.innerWidth <= 1200);
-    };
-
-    window.addEventListener('resize', checkSize);
-    checkSize();
-
-    return () => window.removeEventListener('resize', checkSize);
-  }, []);
-
-  const handlePreRegister = () => {
-    setModalOpen(true);
   };
   const [showContent1, setShowContent1] = useState(false);
   const [showContent2, setShowContent2] = useState(false);
@@ -59,9 +23,6 @@ const Landing = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // arrows: true,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
     autoplay: true,
     autoplaySpeed: 3000,
   };
@@ -89,14 +50,6 @@ const Landing = () => {
             </div>
           </div>
           <div className="flex flex-row lg:flex-col md:flex-row items-start justify-start gap-[32px]">
-            <button
-              className="cursor-pointer py-2 px-2.5 bg-primaryblue-500 rounded-lg flex flex-row items-center justify-start"
-              onClick={handlePreRegister}
-            >
-              <div className="relative text-sm font-semibold font-poppins text-white text-left">
-                Pre-Register
-              </div>
-            </button>
             <button
               className="cursor-pointer p-2 bg-[transparent] rounded-lg flex flex-row items-center justify-start"
               onClick={() => {
@@ -153,16 +106,6 @@ const Landing = () => {
         <div className="self-stretch flex flex-col transition-all items-start justify-start gap-[96px] text-center text-13xl text-neutralgray-600 font-poppins">
           <div className="self-stretch flex flex-col items-start justify-start gap-[10px] md:items-center">
             <div className="relative w-full shrink-0 flex flex-col items-end justify-start">
-              {showBackground && (
-                <div className="absolute inset-0 w-full h-full">
-                  <img
-                    className="absolute inset-0 w-full h-full object-cover"
-                    src="/landing/launchPhoto2.png"
-                    alt="Background"
-                  />
-                  <div className="absolute inset-0 bg-black opacity-50"></div>
-                </div>
-              )}
               <div className="relative flex flex-row text-13xl sm:text-7xl-8 items-center justify-start py-14 mx-auto lg:text-primarywhite">
                 <h1 className="m-0 flex-1 relative text-inherit font-semibold font-inherit">
                   What Sets Us Apart
@@ -176,6 +119,7 @@ const Landing = () => {
                     className="relative self-stretch rounded-2xs bg-primarywhite flex flex-col items-start justify-start py-4 px-5 gap-[10px] border-[1px] border-solid border-whitesmoke-100"
                     onMouseEnter={() => setShowContent1(true)}
                     onMouseLeave={() => setShowContent1(false)}
+                    // mouse cursor to a hand symbol
                     style={{ cursor: 'pointer' }}
                   >
                     <div className="self-stretch flex flex-row items-center justify-between">
@@ -944,12 +888,6 @@ const Landing = () => {
           <div className="relative text-right">Investment Made Easy!</div>
         </footer>
       </div>
-      <button
-        className="cursor-pointer fixed h-auto bottom-0 left-0 w-full py-3 bg-primaryblue-500 text-primarywhite text-lg z-10"
-        onClick={handlePreRegister}
-      >
-        Pre-Register
-      </button>
     </div>
   );
 };
