@@ -24,7 +24,7 @@ const Navbar = () => {
     '[text-decoration:none] flex flex-col p-8 items-start justify-start text-[inherit] hover:bg-gray-50 hover:text-primaryblue-500';
   return (
     <div>
-      <div className="self-stretch bg-white flex flex-row py-4 xs:px-2 sm:px-5 md:px-6 px-[100px] items-center justify-between text-left text-sm text-neutralgray-600 font-body-small14 border-b-[1px] border-solid border-gainsboro-100">
+      <div className="self-stretch z-500 bg-white flex flex-row py-4 xs:px-2 sm:px-5 md:px-6 px-[100px] items-center justify-between text-left text-sm text-neutralgray-600 font-body-small14 border-b-[1px] border-solid border-gainsboro-100">
         {/* LOGO - start */}
         {/* Make sure that the above padding is set to the all the other components on this page. */}
         <Link to="/">

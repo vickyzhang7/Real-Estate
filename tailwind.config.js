@@ -4,6 +4,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
+      zIndex: {
+        '1000': 1000, 
+      },
       spacing: {
         '10px': '10px', // custom margin value for 10px
       },

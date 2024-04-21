@@ -11,7 +11,8 @@ function OurStoryDropdown() {
   };
 
   return (
-    <Menu as="div" className="relative inline-block text-left">
+    // ***Zindex, here
+    <Menu as="div" className="relative z-1000 inline-block text-left">
       {({ open }) => (
         <>
           <div>
@@ -24,7 +25,8 @@ function OurStoryDropdown() {
           </div>
           {/* Code for the open dropdown */}
           <Menu.Items
-            className={`absolute z-50 right-0 w-full mt-0 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${
+          // ***z-500 in this part is wrong
+            className={`absolute right-0 w-full mt-0 origin-top-right bg-white divide-y divide-gray-100 rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none ${
               open ? 'block' : 'hidden'
             }`}
           >
