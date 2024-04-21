@@ -50,6 +50,7 @@ const Landing = () => {
             </div>
           </div>
           <div className="flex flex-row lg:flex-col md:flex-row items-start justify-start gap-[32px]">
+            {/* the Smooth Scrolling function */}
             <button
               className="cursor-pointer p-2 bg-[transparent] rounded-lg flex flex-row items-center justify-start"
               onClick={() => {

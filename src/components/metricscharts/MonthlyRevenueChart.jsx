@@ -18,7 +18,7 @@ const MonthlyRevenue = props => {
   ];
 
   return (
-    <div className="my-14">
+    <div className="my-14 w-1/2">
       <div className="flex flex-row w-full justify-between mb-8">
         <p className="text-zinc-700 text-base font-medium font-poppins border-b border-dashed">
           {props.chartname}

@@ -88,14 +88,14 @@ const CustomTabPanel = props => {
             prices, market trends, and popular locations, empowering you to make
             informed decisions in the rental market.
           </div>
-          {/* TODO: Get the Required data for the charts and the calculations from the backend */}
-          {/* TODO: Get the Average, Minimum, Maximum Calculated based on the data queried from the backend */}
+          <div className="flex justify-center">
           <MonthlyRevenue
             chartname="Monthly Revenue"
             Average="13000"
             Minimum="9500"
             Maximum="17000"
           />
+          </div>
         </>
       </TabPanel>
       <TabPanel value={2}>
@@ -197,19 +197,22 @@ const CustomTabPanel = props => {
 
         {/* TODO: Get the Required data for the charts and the calculations from the backend */}
         {/* TODO: Get the Average, Minimum, Maximum Calculated based on the data queried from the backend */}
+        <div className="flex justify-center"> 
         <MonthlyRevenue
           chartname="Rental Vacancy Rate"
           Average="13000"
           Minimum="9500"
           Maximum="17000"
         />
-
+        </div>
+        <div className="flex justify-center"> 
         <MonthlyRevenue
           chartname="Rental Growth Rate"
           Average="13000"
           Minimum="9500"
           Maximum="17000"
         />
+        </div>
       </TabPanel>
       <TabPanel value={4}>
       </TabPanel>
