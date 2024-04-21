@@ -2,7 +2,7 @@ import React from 'react';
 import GaugeChart from 'react-gauge-chart';
 
 const chartStyle = {
-  width: 200,
+  width: 400,
   height: 90,
   fontFamily: 'Poppins',
 };

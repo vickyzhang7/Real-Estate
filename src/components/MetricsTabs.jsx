@@ -86,10 +86,9 @@ const CustomTabPanel = props => {
         {/**
          * TODO: Get the Below Data from the API in the required format and map the values to the below components.
          */}
-        <div className="flex flex-row w-full">
+        <div className="flex justify-center flex-row w-full">
           <RiskMeter speed="70" />
-        </div>
-        <div className="w-full">
+          <div className="w-full mt-14">
           <div className="text-zinc-700 text-base font-medium font-poppins">
             Medium Risk
           </div>
@@ -103,6 +102,8 @@ const CustomTabPanel = props => {
            * TODO: Get the metrics, labels and their values based on backend data. And map them to the props below.
            **/}
         </div>
+        </div>
+        
       </TabPanel>
       <TabPanel className="w-full h-[350px]" value={3}>
         <div className="text-base font-poppins text-zinc-700">
