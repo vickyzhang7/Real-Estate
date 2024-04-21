@@ -64,22 +64,6 @@ const CustomTabPanel = props => {
         >
           Area Insights
         </Tab>
-        <Tab
-          slotProps={{
-            root: ({ selected, disabled }) => ({
-              className: `font-poppins ${
-                selected
-                  ? 'text-primaryblue-500 font-medium bg-white border-b-4 border-primaryblue-500'
-                  : 'text-stone-900 bg-transparent'
-              } ${
-                disabled ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'
-              } text-base w-full p-2 m-1.5 flex justify-center`,
-            }),
-          }}
-          value={4}
-        >
-          Other Insights
-        </Tab>
       </TabsList>
       <TabPanel className="w-full" value={1}>
         <>
@@ -194,27 +178,6 @@ const CustomTabPanel = props => {
             success in the area.
           </div>
         </div>
-
-        {/* TODO: Get the Required data for the charts and the calculations from the backend */}
-        {/* TODO: Get the Average, Minimum, Maximum Calculated based on the data queried from the backend */}
-        <div className="flex justify-center"> 
-        <MonthlyRevenue
-          chartname="Rental Vacancy Rate"
-          Average="13000"
-          Minimum="9500"
-          Maximum="17000"
-        />
-        </div>
-        <div className="flex justify-center"> 
-        <MonthlyRevenue
-          chartname="Rental Growth Rate"
-          Average="13000"
-          Minimum="9500"
-          Maximum="17000"
-        />
-        </div>
-      </TabPanel>
-      <TabPanel value={4}>
       </TabPanel>
     </Tabs>
   );
