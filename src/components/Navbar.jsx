@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 import LoginButton from "./LoginButton";
 import LogoutButton from "./LogoutButton";
+import OurStoryDropdown from './ui/OurStoryDropdown';
 
 const Tooltip = ({ text }) => {
   return (
@@ -39,12 +40,10 @@ const Navbar = () => {
               <Link to="/marketplace" className={linkClassNames}>
                 <div className="relative font-medium">Marketplace</div>
               </Link>
-              <Link to="/learn" className={linkClassNames}>
-                <div className="relative font-medium">Learn</div>
-              </Link>
               <Link to="/community" className={linkClassNames}>
                 <div className="relative font-medium">Community</div>
               </Link>
+              <OurStoryDropdown />
               <div className="relative font-medium"><LogoutButton /></div>
             </div>
             </>

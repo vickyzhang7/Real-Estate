@@ -5,7 +5,6 @@ import Landing from './pages/Landing';
 import AboutPage from './pages/AboutPage';
 import MarketplacePage from './pages/MarketplacePage';
 import PortfolioPage from './pages/PortfolioPage';
-import LearnPage from './pages/LearnPage';
 import CommunityPage from './pages/CommunityPage';
 import { useAuth0 } from "@auth0/auth0-react";
 import './App.css';
@@ -17,7 +16,6 @@ const App = () => {
       <Route path="/" element={<Landing />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/marketplace" element={<MarketplacePage />} />
-      <Route path="/learn" element={<LearnPage />} />
       <Route path="/community" element={<CommunityPage />} />
       <Route path="/portfolio" element={<PortfolioPage />} />
     </Routes>
