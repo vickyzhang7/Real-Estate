@@ -1,5 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const AnnouncementCard = ({
   fullText,
@@ -9,6 +11,7 @@ const AnnouncementCard = ({
   commenttype,
   title,
 }) => {
+  const navigate = useNavigate();
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleText = () => setIsExpanded(!isExpanded);
 
@@ -69,8 +72,7 @@ const AnnouncementCard = ({
       </div>
       <div
         className="h-16xl px-5 py-3 rounded-lg bg-primaryblue-500 text-white text-center text-medium cursor-pointer mt-6"
-        // eslint-disable-next-line no-undef
-        onClick={toggleText}
+        onClick={() => navigate('/community')}
       >
         Go to community
       </div>
