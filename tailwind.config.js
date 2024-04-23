@@ -8,7 +8,7 @@ module.exports = {
         '1000': 1000, 
       },
       spacing: {
-        '10px': '10px', // custom margin value for 10px
+        '10px': '10px',
       },
       colors: {
         'primary-blue-500': '#0d65b6',

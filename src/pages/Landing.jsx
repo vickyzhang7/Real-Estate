@@ -16,16 +16,6 @@ const Landing = () => {
   const [showContent2, setShowContent2] = useState(false);
   const [showContent3, setShowContent3] = useState(false);
   const [showContent4, setShowContent4] = useState(false);
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-  };
   const gatewaySettings = {
     dots: true,
     infinite: true,
@@ -74,36 +64,6 @@ const Landing = () => {
         id="scrollTarget"
         className="self-stretch flex flex-col items-center justify-center py-0 gap-[100px] text-[24.57px] text-dimgray-200 font-inter"
       >
-        <Slider
-          {...settings}
-          className="w-full h-auto flex items-center justify-center xs:px-2 sm:px-5 md:px-6 px-[100px]"
-        >
-          <div className="flex flex-col bg-white items-center justify-center">
-            <div className="text-black text-center font-semibold xs:text-sm sm:text-md md:text-lg text-2xl">
-              Our Mission
-            </div>
-            <div className="text-black text-center xs:w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto font-poppins xs:text-xs sm:text-sm md:text-sm text-lg">
-              To democratize real estate investing, we are committed to
-              providing a global platform for individuals to participate in
-              diverse real estate opportunities, achieve their financial goals,
-              and actively contribute to the growth and development of
-              communities worldwide.
-            </div>
-          </div>
-
-          <div className="flex flex-col bg-white items-center justify-center">
-            <div className="text-black font-semibold text-center xs:text-sm sm:text-md md:text-lg text-2xl">
-              Our Vision
-            </div>
-            <div className="text-black text-center xs:w-full sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto font-poppins xs:text-xs sm:text-sm md:text-sm text-lg">
-              We envision a world where everyone, regardless of location or
-              financial status, can benefit from real estate investment
-              opportunities with a click. By harnessing AI and cutting-edge
-              technology, we aim to create an inclusive, transparent ecosystem
-              fostering collaboration, innovation,and sustainable growth.
-            </div>
-          </div>
-        </Slider>
         <div className="self-stretch flex flex-col transition-all items-start justify-start gap-[96px] text-center text-13xl text-neutralgray-600 font-poppins">
           <div className="self-stretch flex flex-col items-start justify-start gap-[10px] md:items-center">
             <div className="relative w-full shrink-0 flex flex-col items-end justify-start">
