@@ -7,7 +7,7 @@ function OurStoryDropdown() {
   const dropdownItems = {
     About: 'about',
     'Contact Us': 'contact-us',
-    Support: 'support',
+    'Join Us': 'join-us',
   };
 
   return (

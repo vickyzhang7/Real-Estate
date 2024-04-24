@@ -14,7 +14,7 @@ const AboutPage = () => {
   return (
     <div className="p-6 lg:p-8 xl:p-10"> 
       <h1 className="text-4xl font-bold text-primaryblue-500 text-center">About Us</h1>
-      <p className="text-base text-neutralgray-400 mt-10 text-center">
+      <p className="text-3xl text-neutralgray-400 mt-10 text-center">
         We are a professional real estate company dedicated to helping clients find their dream homes or investment opportunities.
       </p>
 

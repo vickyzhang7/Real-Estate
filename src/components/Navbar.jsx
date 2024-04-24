@@ -60,7 +60,7 @@ const Navbar = () => {
                   <Tooltip text="Community"></Tooltip>
                 </div>
                 <div className="relative font-medium items-center">
-                  <Tooltip text="Support"></Tooltip>
+                  <Tooltip text="Others"></Tooltip>
                 </div>
                 <div className="relative font-medium items-center">
                   <LoginButton />
