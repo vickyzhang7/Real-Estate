@@ -80,8 +80,7 @@ const Landing = () => {
                     className="relative self-stretch rounded-2xs bg-primarywhite flex flex-col items-start justify-start py-4 px-5 gap-[10px] border-[1px] border-solid border-whitesmoke-100"
                     onMouseEnter={() => setShowContent1(true)}
                     onMouseLeave={() => setShowContent1(false)}
-                    // mouse cursor to a hand symbol
-                    style={{ cursor: 'pointer' }}
+                    style={{ cursor: 'pointer' }}// mouse cursor to a hand symbol
                   >
                     <div className="self-stretch flex flex-row items-center justify-between">
                       <div className="relative font-medium md:text-base sm:text-sm">
@@ -102,19 +101,11 @@ const Landing = () => {
                     >
                       <div className="flex-1 relative text-sm sm:text-xs font-poppins">
                         <p className="m-0">
-                          Drive into Sophtera vast investment landscape and
+                          Drive into RealEstateShowtime vast investment landscape and
                           ecosystem. From real estate properties, cash flowing
                           businesses to infrastructure and new development
                           projects.
                         </p>
-                        <ul className="m-0">
-                          <li>
-                            Select from multifamily units, commercial real
-                            estate, startups, renewable energy initiatives,
-                            urban development ventures, to crafting a diverse
-                            and forward-thinking portfolio.
-                          </li>
-                        </ul>
                       </div>
                     </div>
                   </div>
@@ -146,15 +137,6 @@ const Landing = () => {
                           Sophtera empowers you to dictate your investment, be
                           it active or passive investing.
                         </p>
-                        <ul className="m-0 pl-[21px]">
-                          <li>
-                            Embrace an active role, by diving into
-                            decision-making processes, or opt for a passive
-                            stance, allowing our community of experts to manage
-                            the intricacies, all tailored to your investment
-                            style preferences.
-                          </li>
-                        </ul>
                       </div>
                     </div>
                   </div>
@@ -187,15 +169,6 @@ const Landing = () => {
                           decisions with Sophtera, transforming the way you
                           approach and strategize your investments.
                         </p>
-                        <ul className="m-0 pl-[21px]">
-                          <li>
-                            Leveraging advanced AI algoirithms and underwriting
-                            to pinpoint top-performing properties, minimizing
-                            risks, and provide timely insights, ensuring you
-                            remain at the forefront of the ever-changing
-                            investment arena.
-                          </li>
-                        </ul>
                       </div>
                     </div>
                   </div>
@@ -228,16 +201,6 @@ const Landing = () => {
                           accessing untapped markets and opportunities beyond
                           borders.
                         </p>
-                        <ul className="m-0 pl-[21px]">
-                          <li>
-                            Through our extensive platform dive deep into
-                            diverse regions and countries, transcending
-                            traditional geographical limitations, and
-                            capitalizing on a myriad of worldwide opportunities
-                            to maximize the potential and diversity of your
-                            investment portfolio.
-                          </li>
-                        </ul>
                       </div>
                     </div>
                   </div>
