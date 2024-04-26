@@ -55,7 +55,7 @@ const announcements = [
 
 const CommunityPage = () => {
   return (
-    <div className="flex flex-col gap-6 mt-10">
+    <div className="flex flex-col gap-6 mt-10 mr-40 ml-40">
       {announcements.map((announcement, index) => (
         <AnnouncementCard
           key={index}
