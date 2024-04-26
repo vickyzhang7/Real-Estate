@@ -62,9 +62,9 @@ const Landing = () => {
       </div>
       <div
         id="scrollTarget"
-        className="self-stretch flex flex-col items-center justify-center py-0 gap-[100px] text-[24.57px] text-dimgray-200 font-inter"
+        className="self-stretch flex flex-col items-center justify-center py-0 text-[24.57px] text-dimgray-200 font-inter"
       >
-        <div className="self-stretch flex flex-col transition-all items-start justify-start gap-[96px] text-center text-13xl text-neutralgray-600 font-poppins">
+        <div className="self-stretch flex flex-col transition-all items-start justify-start text-center text-13xl text-neutralgray-600 font-poppins">
           <div className="self-stretch flex flex-col items-start justify-start gap-[10px] md:items-center">
             <div className="relative w-full shrink-0 flex flex-col items-end justify-start">
               <div className="relative flex flex-row text-13xl sm:text-7xl-8 items-center justify-start py-14 mx-auto lg:text-primarywhite">
@@ -215,13 +215,13 @@ const Landing = () => {
               </div>
             </div>
           </div>
-          <div className="self-stretch flex flex-col items-center justify-center gap-[80px] mt-[-40px]">
+          <div className="self-stretch flex flex-col items-center justify-center gap-[80px]">
             <div className="md:text-13xl max-w-[569px] flex flex-row items-center justify-center xs:px-2 sm:px-5 md:px-6 px-[100px] ">
               <h1 className="m-0 flex-1 relative text-inherit font-semibold font-inherit sm:text-5xl">
                 Your Gateway to Exclusive Real Estate Opportunities
               </h1>
             </div>
-            <div className="self-stretch grid grid-rows-2 grid-cols-3 lg:grid-rows-3 lg:grid-cols-2 items-start justify-between text-left text-xl text-gray-400 xs:px-2 sm:px-5 md:px-6 px-[100px] md:hidden sm:hidden">
+            <div className="self-stretch grid grid-rows-1 grid-cols-3 lg:grid-rows-3 lg:grid-cols-2 items-start justify-between text-left text-xl text-gray-400 xs:px-2 sm:px-5 md:px-6 px-[100px] md:hidden sm:hidden mb-20">
               <div className="rounded-3xs bg-gray-200 w-[344px] lg:w-[330px] h-[344px] lg:h-[330px] overflow-auto shrink-0 flex flex-col items-start justify-start py-10 px-6 box-border m-5">
                 <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
                   <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
@@ -291,229 +291,7 @@ const Landing = () => {
                   </div>
                 </div>
               </div>
-              <div className="rounded-3xs bg-gray-200 overflow-y-hidden w-[344px] lg:w-[330px] h-[344px] lg:h-[330px] overflow-auto shrink-0 flex flex-col items-start justify-start py-10 px-6 box-border m-5">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                  <div className="flex flex-col items-start justify-start gap-[16px]">
-                    <div className="flex flex-col items-center justify-start">
-                      <div className="rounded-[11.25px] flex flex-row items-start justify-start p-2">
-                        <img
-                          className="relative w-8 h-8"
-                          alt="Profile Icon"
-                          src="/landing/Wholesalers.png"
-                        />
-                      </div>
-                    </div>
-                    <h3 className="m-0 relative text-gray-700 font-medium font-poppins">
-                      Wholesalers
-                    </h3>
-                  </div>
-                  <div className="self-stretch relative text-sm text-darkslategray-200">
-                    Showcase your projects on our platform to captivate a myriad
-                    of investors, manage listings, underwrite deals, and gauge
-                    potential earnings. Dive in with no upfront investment,
-                    perfect for novices and experts alike.
-                  </div>
-                </div>
-              </div>
-              <div className="rounded-3xs bg-gray-200 overflow-y-hidden w-[344px] lg:w-[330px] h-[344px] lg:h-[330px] overflow-auto shrink-0 flex flex-col items-start justify-start py-10 px-6 box-border m-5">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
-                    <div className="flex flex-col items-center justify-start">
-                      <div className="rounded-[11.25px] flex flex-row items-start justify-start p-2">
-                        <img
-                          className="relative w-8 h-8"
-                          alt=""
-                          src="/landing/PropertyManagers.png"
-                        />
-                      </div>
-                    </div>
-                    <h3 className="m-0 self-stretch relative text-gray-700 font-medium font-poppins">
-                      Property Managers
-                    </h3>
-                  </div>
-                  <div className="self-stretch relative text-sm text-darkslategray-200">
-                    As you engage, you can bid on contracts, showcase your
-                    expertise on our user forum, and receive feedback to foster
-                    a reputable standing among property owners and investors.
-                  </div>
-                </div>
-              </div>
-              <div className="rounded-3xs bg-gray-200 overflow-y-hidden w-[344px] lg:w-[330px] h-[344px] lg:h-[330px] overflow-auto shrink-0 flex flex-col items-start justify-start py-10 px-6 box-border m-5">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                  <div className="flex flex-col items-start justify-start gap-[16px]">
-                    <div className="flex flex-col items-center justify-start">
-                      <div className="rounded-[11.25px] flex flex-row items-start justify-start p-2">
-                        <img
-                          className="relative w-8 h-8"
-                          alt="Bank icon"
-                          src="/landing/Contractors.png"
-                        />
-                      </div>
-                    </div>
-                    <h3 className="m-0 relative text-gray-700 font-medium font-poppins">
-                      Contractors
-                    </h3>
-                  </div>
-                  <div className="self-stretch relative text-sm text-darkslategray-200">
-                    You will be able to bid and secure construction projects
-                    right on our platform, display your craftsmanship in our
-                    user forum, and garner feedback to establish a record of
-                    quality and timely completion.
-                  </div>
-                </div>
-              </div>
             </div>
-            <div className="self-stretch p-10 xs:px-2 sm:px-10 sm:py-10 md:px-6 px-[100px] md:block sm:block xlScreen:hidden lg:hidden">
-              <Slider
-                {...gatewaySettings}
-                className="w-full h-auto flex items-center justify-center sm:block md:block"
-              >
-                {/* Repeat this div for each of the 6 items */}
-                <div className="rounded-3xs bg-secondaryblue-50 overflow-y-hidden w-[340px] h-[344px] overflow-auto shrink-0 flex flex-col items-start justify-start py-10 px-10 box-border">
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                    <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
-                      <div className="flex flex-col items-start justify-start">
-                        <div className="rounded-[11.25px] flex flex-row items-start justify-start p-2">
-                          <img
-                            className="relative w-8 h-8"
-                            alt="Profile Icon"
-                            src="/landing/landing_investorsimage.png"
-                          />
-                        </div>
-                      </div>
-                      <h3 className="m-0 relative text-left text-gray-700 sm:text-base font-medium font-poppins">
-                        Investors
-                      </h3>
-                    </div>
-                    <div className="relative text-sm text-left text-darkslategray-200">
-                      Build your portfolio, manage your purchases, and view your
-                      profit and losses across all of your investments from our
-                      convenient dashboard.
-                    </div>
-                  </div>
-                </div>
-                <div className="rounded-3xs bg-secondaryblue-50 overflow-y-hidden w-[340px] h-[344px] overflow-auto shrink-0 flex flex-col items-center justify-center py-10 px-10 box-border">
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                    <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
-                      <div className="flex flex-col items-center justify-start">
-                        <div className="rounded-[11.25px] flex flex-row items-start justify-start p-2">
-                          <img
-                            className="relative w-8 h-8"
-                            alt=""
-                            src="/landing/landing_repimage.png"
-                          />
-                        </div>
-                      </div>
-                      <h3 className="m-0 relative text-left text-gray-700 font-medium sm:text-base font-poppins">
-                        Real Estate Professionals
-                      </h3>
-                    </div>
-                    <div className="relative text-sm text-left text-darkslategray-200">
-                      Build relationships and network with other professionals.
-                      Showcase your expertise to attract investors while
-                      promoting your properties and raising capital on our
-                      platform.
-                    </div>
-                  </div>
-                </div>
-                <div className="rounded-3xs bg-secondaryblue-50 overflow-y-hidden w-[340px] h-[344px] overflow-auto shrink-0 flex flex-col items-center justify-center py-10 px-10 box-border">
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                    <div className="flex flex-col items-start justify-start gap-[16px]">
-                      <div className="flex flex-col items-center justify-start">
-                        <div className="rounded-[11.25px] flex flex-row items-start justify-start p-2">
-                          <img
-                            className="relative w-8 h-8"
-                            alt="Bank icon"
-                            src="/landing/landing_institutionsimage.png"
-                          />
-                        </div>
-                      </div>
-                      <h3 className="m-0 relative text-left text-gray-700 font-medium sm:text-base font-poppins">
-                        Financial Institutions
-                      </h3>
-                    </div>
-                    <div className="relative text-sm text-left text-darkslategray-200">
-                      You will be able to showcase your offerings, connect with
-                      qualified borrowers, expand your customer base and build
-                      rapport with our investors.
-                    </div>
-                  </div>
-                </div>
-                <div className="rounded-3xs bg-secondaryblue-50 overflow-y-hidden w-[340px] h-[344px] overflow-auto shrink-0 flex flex-col items-center justify-center py-10 px-10 box-border">
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                    <div className="flex flex-col items-start justify-start gap-[16px]">
-                      <div className="flex flex-col items-center justify-start">
-                        <div className="rounded-[11.25px] flex flex-row items-start justify-start p-2">
-                          <img
-                            className="relative w-8 h-8"
-                            alt="Profile Icon"
-                            src="/landing/Wholesalers.png"
-                          />
-                        </div>
-                      </div>
-                      <h3 className="m-0 relative text-left text-gray-700 font-medium sm:text-base font-poppins">
-                        Wholesalers
-                      </h3>
-                    </div>
-                    <div className="relative text-sm text-left text-darkslategray-200">
-                      Showcase your projects on our platform to captivate a
-                      myriad of investors, manage listings, underwrite deals,
-                      and gauge potential earnings. Dive in with no upfront
-                      investment, perfect for novices and experts alike.
-                    </div>
-                  </div>
-                </div>
-                <div className="rounded-3xs bg-secondaryblue-50 overflow-y-hidden w-[340px] h-[344px] overflow-auto shrink-0 flex flex-col items-center justify-center py-10 px-10 box-border">
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                    <div className="self-stretch flex flex-col items-start justify-start gap-[16px]">
-                      <div className="flex flex-col items-center justify-start">
-                        <div className="rounded-[11.25px] flex flex-row items-start justify-start p-2">
-                          <img
-                            className="relative w-8 h-8"
-                            alt=""
-                            src="/landing/PropertyManagers.png"
-                          />
-                        </div>
-                      </div>
-                      <h3 className="m-0 relative text-left text-gray-700 font-medium sm:text-base font-poppins">
-                        Property Managers
-                      </h3>
-                    </div>
-                    <div className="relative text-sm text-left text-darkslategray-200">
-                      As you engage, you can bid on contracts, showcase your
-                      expertise on our user forum, and receive feedback to
-                      foster a reputable standing among property owners and
-                      investors.
-                    </div>
-                  </div>
-                </div>
-                <div className="rounded-3xs bg-secondaryblue-50 overflow-y-hidden w-[340px] h-[344px] overflow-auto shrink-0 flex flex-col items-center justify-center py-10 px-10 box-border">
-                  <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-                    <div className="flex flex-col items-start justify-start gap-[16px]">
-                      <div className="flex flex-col items-center justify-start">
-                        <div className="rounded-[11.25px] flex flex-row items-start justify-start p-2">
-                          <img
-                            className="relative w-8 h-8"
-                            alt="Bank icon"
-                            src="/landing/Contractors.png"
-                          />
-                        </div>
-                      </div>
-                      <h3 className="m-0 relative text-left text-gray-700 font-medium sm:text-base font-poppins">
-                        Contractors
-                      </h3>
-                    </div>
-                    <div className="relative text-sm text-left text-darkslategray-200">
-                      You will be able to bid and secure construction projects
-                      right on our platform, display your craftsmanship in our
-                      user forum, and garner feedback to establish a record of
-                      quality and timely completion.
-                    </div>
-                  </div>
-                </div>
-              </Slider>
-            </div>
-            <div className="self-stretch flex flex-row items-start justify-between text-left text-xl text-gray-400 md:flex-col"></div>
           </div>
         </div>
         <div className="self-stretch flex flex-col items-center justify-center text-center text-13xl text-neutralgray-600 font-h1-small36">
@@ -689,102 +467,6 @@ const Landing = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="self-stretch bg-gray-300 sm:bg-secondaryblue-50 flex flex-col items-center justify-start py-14 xs:px-2 sm:px-5 px-[100px] gap-[80px] text-left text-13xl text-neutralgray-600">
-        <div className="flex flex-row items-center justify-center">
-          <h1 className="m-0 relative text-inherit font-semibold font-inherit sm:text-7xl-8">
-            How it Works
-          </h1>
-        </div>
-        <div className="self-stretch flex flex-row lg:flex-col md:items-center lg:items-center items-start justify-between text-xl text-gray-400 gap-[48px]">
-          <div className="rounded-3xs bg-white w-[344px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-10 px-6 box-border">
-            <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-              <div className="flex flex-row items-start justify-start relative gap-[136px]">
-                <div className="flex flex-col items-start justify-start gap-[16px] z-[0]">
-                  <div className="flex flex-col items-center justify-start">
-                    <div className="rounded-[11.25px] bg-primary-white flex flex-row items-start justify-start p-2">
-                      <img
-                        className="relative w-8 h-8"
-                        alt=""
-                        src="/landing/landing_investorsimage.png"
-                      />
-                    </div>
-                  </div>
-                  <h3 className="m-0 relative text-gray-700 text-[20px] font-medium font-poppins inline-block w-[190px]">
-                    Explore Opportunities
-                  </h3>
-                </div>
-                <div className="absolute top-[-42px] left-[237.31px] text-neutralgray-100 text-105xl font-black">
-                  1
-                </div>
-              </div>
-              <div className="self-stretch relative text-sm text-darkslategray-200">
-                Access a curated range of real estate projects, businesses, more
-                complete with detailed insights like location and expected
-                returns. Explore a diverse portfolio of investments,featuring
-                market trends to inform your decisions.
-              </div>
-            </div>
-          </div>
-          <div className="rounded-3xs bg-white w-[344px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-10 px-6 box-border">
-            <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-              <div className="flex flex-row items-start justify-start relative gap-[136px]">
-                <div className="flex-1 flex flex-col items-start justify-start gap-[16px] z-[0]">
-                  <div className="flex flex-col items-center justify-start">
-                    <div className="rounded-[11.25px] bg-primary-white flex flex-row items-start justify-start p-2">
-                      <img
-                        className="relative w-8 h-8"
-                        alt=""
-                        src="/landing/landing_repimage.png"
-                      />
-                    </div>
-                  </div>
-                  <h3 className="m-0 relative text-gray-700 text-[20px] font-medium font-poppins inline-block w-[190px]">
-                    Community + AI Strategy
-                  </h3>
-                </div>
-                <div className="absolute top-[-42px] left-[237.31px] text-neutralgray-100 text-105xl font-black">
-                  2
-                </div>
-              </div>
-              <div className="self-stretch relative text-sm text-darkslategray-200">
-                Decide on your investment approach, be it active or passive.
-                Connect with our vibrant community, engage in discussions, and
-                harness both community and AI perspectives to foster your
-                investments success.
-              </div>
-            </div>
-          </div>
-          <div className="rounded-3xs bg-white w-[344px] overflow-hidden shrink-0 flex flex-col items-start justify-start py-10 px-6 box-border">
-            <div className="self-stretch flex flex-col items-start justify-start gap-[24px]">
-              <div className="flex flex-row items-start justify-start relative gap-[136px]">
-                <div className="flex flex-col items-start justify-start gap-[16px] z-[0]">
-                  <div className="flex flex-col items-center justify-start">
-                    <div className="rounded-[11.25px] bg-primary-white flex flex-row items-start justify-start p-2">
-                      <img
-                        className="relative w-8 h-8"
-                        alt=""
-                        src="/landing/landing_institutionsimage.png"
-                      />
-                    </div>
-                  </div>
-                  <h3 className="m-0 relative text-gray-700 text-[22px] font-medium font-poppins inline-block w-[190px]">
-                    Smart Investment
-                  </h3>
-                </div>
-                <div className="absolute top-[-42px] left-[237.31px] text-neutralgray-100 text-105xl font-black">
-                  3
-                </div>
-              </div>
-              <div className="self-stretch relative text-sm text-darkslategray-200">
-                Explore smart investing to amplify and scale your portfolio.
-                Choose to diversify your portfolio, plan your next financial
-                move with our platforms guidance, as well as receiving regular
-                updates on your investment and returns.
               </div>
             </div>
           </div>
