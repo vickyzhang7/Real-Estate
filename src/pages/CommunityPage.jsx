@@ -6,7 +6,7 @@ const announcements = [
   {
     commenttype: '🚨 Announcements',
     MemberName: 'Steph',
-    commenttime: '06/01/2023 1:55 PM',
+    commenttime: '04/01/2024 1:55 PM',
     title: '🚀 Project Launch Announcement',
     maxShortTextLength: 250,
     fullText: `
@@ -21,7 +21,7 @@ const announcements = [
   {
     commenttype: '💼 Business Updates',
     MemberName: 'John',
-    commenttime: '06/02/2023 10:00 AM',
+    commenttime: '04/02/2024 10:00 AM',
     title: '💼 New Business Partnerships',
     fullText: `
       We are excited to announce new partnerships with local businesses to support our community.
@@ -32,7 +32,7 @@ const announcements = [
   {
     commenttype: '🎉 Events',
     MemberName: 'Sarah',
-    commenttime: '06/03/2023 3:00 PM',
+    commenttime: '04/03/2024 3:00 PM',
     title: '🎉 Community Picnic',
     fullText: `
       Join us for a fun-filled community picnic this weekend!
@@ -43,7 +43,7 @@ const announcements = [
   {
     commenttype: '🌱 Environmental Initiatives',
     MemberName: 'Mike',
-    commenttime: '06/04/2023 9:30 AM',
+    commenttime: '04/04/2024 9:30 AM',
     title: '🌱 Tree Planting Event',
     fullText: `
       We are hosting a tree planting event to promote sustainability and environmental awareness.

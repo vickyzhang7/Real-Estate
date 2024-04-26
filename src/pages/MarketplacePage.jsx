@@ -82,7 +82,7 @@ const MarketplacePage = () => {
               <AnnouncementCard
                 commenttype={'🚨 Announcements'}
                 MemberName={'Steph'}
-                commenttime={'06/01/2023 1:55 PM'}
+                commenttime={'04/01/2024 1:55 PM'}
                 title={'🚀 Project Launch Announcement'}
                 maxShortTextLength={250}
                 fullText={`
