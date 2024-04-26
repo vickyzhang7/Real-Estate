@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState} from 'react';
-import Slider from 'react-slick';
 
 const Landing = () => {
   const ImageComponent = () => {
@@ -16,14 +15,6 @@ const Landing = () => {
   const [showContent2, setShowContent2] = useState(false);
   const [showContent3, setShowContent3] = useState(false);
   const [showContent4, setShowContent4] = useState(false);
-  const gatewaySettings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-  };
   return (
     <div className="relative bg-white w-full overflow-x-hidden flex flex-col items-center justify-start gap-[150px] text-left text-17xl text-dimgray-401 font-poppins pb-[40px]">
       <div className="self-stretch bg-gray-400 flex flex-row md:flex-col xs:px-2 sm:px-5 pl-[100px] md:pl-[40px] sm:pl-[20px] md:px-[50px] items-center justify-between text-dimgray-300 gap-[110px] relative">
