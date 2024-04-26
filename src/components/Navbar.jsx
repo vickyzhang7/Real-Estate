@@ -34,11 +34,11 @@ const Navbar = () => {
           {user ? (
             <>
             <div className="flex flex-row items-center justify-between gap-[50px]">
-              <Link to="/portfolio" className={linkClassNames}>
-                <div className="relative font-medium">Portfolio</div>
-              </Link>
               <Link to="/marketplace" className={linkClassNames}>
                 <div className="relative font-medium">Marketplace</div>
+              </Link>
+              <Link to="/portfolio" className={linkClassNames}>
+                <div className="relative font-medium">Portfolio</div>
               </Link>
               <Link to="/community" className={linkClassNames}>
                 <div className="relative font-medium">Community</div>
