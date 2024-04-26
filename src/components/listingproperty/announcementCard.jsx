@@ -22,8 +22,6 @@ const AnnouncementCard = ({
       ? fullText
       : `${fullText.slice(0, maxShortTextLength)}...`;
   const showButton = location.pathname === '/marketplace';
-
-  console.log(shortText);
   return (
     <div className="border border-solid border-neutralgray-200 py-5 px-6 w-full font-poppins">
       <div className="p-3xs md:px-5xl items-center flex justify-between gap-2.5">
