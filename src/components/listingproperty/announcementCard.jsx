@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate,useLocation  } from 'react-router-dom';
 
 
 const AnnouncementCard = ({
@@ -10,8 +10,10 @@ const AnnouncementCard = ({
   commenttime,
   commenttype,
   title,
+  profileImage, //**new for image
 }) => {
   const navigate = useNavigate();
+  const location = useLocation();//**new for button
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleText = () => setIsExpanded(!isExpanded);
 
@@ -19,6 +21,7 @@ const AnnouncementCard = ({
     fullText.length <= maxShortTextLength
       ? fullText
       : `${fullText.slice(0, maxShortTextLength)}...`;
+  const showButton = location.pathname === '/marketplace';
 
   console.log(shortText);
   return (
@@ -43,7 +46,7 @@ const AnnouncementCard = ({
       <div className="flex justify-between gap-4 mt-6">
         <img
           loading="lazy"
-          src="/listing/ProfilePhoto.png"
+          src={profileImage}
           className="aspect-square object-cover object-center w-8 h-8 rounded-full"
         />
         <div className="items-stretch self-stretch flex grow basis-[0%] flex-col">
@@ -70,12 +73,14 @@ const AnnouncementCard = ({
           </div>
         </div>
       </div>
+      {showButton && (
       <div
         className="h-16xl px-5 py-3 rounded-lg bg-primaryblue-500 text-white text-center text-medium cursor-pointer mt-6"
         onClick={() => navigate('/community')}
       >
         Go to community
       </div>
+      )}
     </div>
   );
 };

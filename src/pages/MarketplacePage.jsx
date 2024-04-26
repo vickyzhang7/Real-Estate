@@ -93,6 +93,7 @@ const MarketplacePage = () => {
                   Stay connected with us as we embark on this remarkable journey. We will be sharing exclusive insights and regular updates to ensure you are part of every exciting development.
                   Thank you for being a vital part of our community, and we look forward to this new chapter with great anticipation.
                 `}
+                profileImage={'/listing/CommunityCat1.png'}
               />
             </div>
           </div>
