@@ -1,11 +1,9 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable no-undef */
 import React, { useEffect } from 'react';
+import { useNavigate} from 'react-router-dom';
 
-const invest = () => {
-  // Logic for the invest action
-  console.log('Invest button clicked');
-};
+
 
 const Investcard = ({
   raisedAmount,
@@ -16,12 +14,15 @@ const Investcard = ({
   minDeposit,
   riskRating,
 }) => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     const progressBar = document.querySelector('.progress-bar');
     if (progressBar) {
       progressBar.style.width = `${percentage}%`;
     }
   }, [percentage]);
+  
   return (
     <div className="border border-solid border-neutralgray-200 font-poppins w-full px-0 sm:px-5xl">
       <div className="py-5 px-6">
@@ -103,7 +104,7 @@ const Investcard = ({
 
         {/* Invest Button */}
         <button
-          onClick={invest}
+          onClick={() => navigate('/portfolio')}
           className="justify-center bg-primaryblue-500 flex mx-auto p-2 w-full rounded-md mt-10"
         >
           <div className="text-white text-sm bg-transparent w-full font-medium p-2">
