@@ -8,7 +8,7 @@ const announcements = [
     MemberName: 'Steph',
     commenttime: '04/01/2024 1:55 PM',
     title: '🚀 Project Launch Announcement',
-    maxShortTextLength: 250,
+    maxShortTextLength: 200,
     fullText: `
       Dear valued community members,
       
@@ -24,10 +24,10 @@ const announcements = [
     commenttime: '04/02/2024 10:00 AM',
     title: '💼 New Business Partnerships',
     fullText: `
-      We are excited to announce new partnerships with local businesses to support our community.
-      These partnerships will provide additional resources and benefits for our members.
+    We are thrilled to share that we have established new partnerships with local businesses to further support our community. These collaborative efforts are designed to create a robust network that offers a wide range of resources and benefits for our members.
     `,
     profileImage: '/listing/CommunityCat2.png', 
+    maxShortTextLength: 200,
   },
   {
     commenttype: '🎉 Events',
@@ -39,6 +39,7 @@ const announcements = [
       There will be games, food, and activities for all ages.
     `,
     profileImage: '/listing/CommunityCat3.png', 
+    maxShortTextLength: 200,
   },
   {
     commenttype: '🌱 Environmental Initiatives',
@@ -47,9 +48,10 @@ const announcements = [
     title: '🌱 Tree Planting Event',
     fullText: `
       We are hosting a tree planting event to promote sustainability and environmental awareness.
-      Join us to help make our community greener and more eco-friendly.
+      Join us to help make our community greener and more eco-friendly.We are excited to invite you to our upcoming tree-planting event, an initiative designed to promote sustainability and raise environmental awareness within our community. By joining us, you'll play a crucial role in making our local environment greener and healthier, contributing to a positive impact on the planet.
     `,
     profileImage: '/listing/CommunityCat4.png', 
+    maxShortTextLength: 200,
   },
 ];
 
