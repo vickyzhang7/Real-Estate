@@ -14,14 +14,14 @@ const AnnouncementCard = ({
 }) => {
   const navigate = useNavigate();
   const location = useLocation();//**new for button
+  
   const [isExpanded, setIsExpanded] = useState(false);
   const toggleText = () => setIsExpanded(!isExpanded);
-
   const shortText =
     fullText.length <= maxShortTextLength
       ? fullText
       : `${fullText.slice(0, maxShortTextLength)}...`;
-      
+
   const showButton = location.pathname === '/marketplace';
   return (
     <div className="border border-solid border-neutralgray-200 py-5 px-6 w-full font-poppins">

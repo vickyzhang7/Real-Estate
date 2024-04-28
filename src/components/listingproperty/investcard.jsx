@@ -108,7 +108,7 @@ const Investcard = ({
           className="justify-center bg-primaryblue-500 flex mx-auto p-2 w-full rounded-md mt-10"
         >
           <div className="text-white text-sm bg-transparent w-full font-medium p-2">
-            Invest
+            Go to portfolio
           </div>
         </button>
       </div>

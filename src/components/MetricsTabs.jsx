@@ -12,7 +12,11 @@ const CustomTabPanel = props => {
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY,
   });
 
-  const center = { lat: props.latitude, lng: props.longitude };
+  const center = {
+    lat: 42.35844,  // latitude
+    lng: -71.06083  // longitude
+  };
+  
   return (
     <Tabs defaultValue={1}>
       <TabsList className="w-full mb-4 bg-white flex font-poppins items-start justify-center content-between min-w-tabs-list">

@@ -27,7 +27,6 @@ const RiskMeter = () => {
         percent={percent}
         arcPadding={0.01}
         style={chartStyle}
-        textColor="black"
         hideText={true}
       />
       <div
