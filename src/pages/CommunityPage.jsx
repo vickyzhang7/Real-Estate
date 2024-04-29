@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState }  from 'react'; 
 import AnnouncementCard from '../components/listingproperty/announcementCard';
 
 
@@ -56,20 +56,38 @@ const announcements = [
 ];
 
 const CommunityPage = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const filteredAnnouncements = announcements.filter((announcement) => 
+    announcement.commenttype.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    announcement.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+    announcement.fullText.toLowerCase().includes(searchTerm.toLowerCase())
+  );
   return (
     <div className="flex flex-col gap-6 mt-10 mr-40 ml-40">
-      {announcements.map((announcement, index) => (
-        <AnnouncementCard
-          key={index}
-          commenttype={announcement.commenttype}
-          MemberName={announcement.MemberName}
-          commenttime={announcement.commenttime}
-          title={announcement.title}
-          maxShortTextLength={announcement.maxShortTextLength}
-          fullText={announcement.fullText}
-          profileImage={announcement.profileImage}
-        />
-      ))}
+      <input
+        type="text"
+        className="border p-2 rounded"
+        placeholder="Search community events..."
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
+      {filteredAnnouncements.length > 0 ? (
+        filteredAnnouncements.map((announcement, index) => (
+          <AnnouncementCard
+            key={index}
+            commenttype={announcement.commenttype}
+            MemberName={announcement.MemberName}
+            commenttime={announcement.commenttime}
+            title={announcement.title}
+            maxShortTextLength={announcement.maxShortTextLength}
+            fullText={announcement.fullText}
+            profileImage={announcement.profileImage}
+          />
+        ))
+      ) : (
+        <div>No community events found.</div>
+      )}
     </div>
   );
 };

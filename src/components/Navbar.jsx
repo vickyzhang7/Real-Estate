@@ -9,7 +9,7 @@ const Tooltip = ({ text }) => {
   return (
     <div className="relative group inline-block">
       <div className="lg:hidden invisible group-hover:visible bg-primaryblue-500 text-white text-[8px] rounded p-1 absolute top-[17px] left-1/2 w-[56px] whitespace-nowrap transform -translate-x-1/2">
-        Coming Soon
+        Please Login
       </div>
       <span className="lg:hidden group-hover:underline cursor-pointer">
         {text}
